@@ -18,7 +18,7 @@ import fr.formation.toptrip.dao.CountryRepository;
 import fr.formation.toptrip.entity.Country;
 
 @Controller
-@RequestMapping("/country")
+@RequestMapping("/redirectpays")
 public class CountryController {
 	
 	@Autowired
@@ -26,9 +26,10 @@ public class CountryController {
 	
 	@RequestMapping("/index")
 	public ModelAndView index() {
-		final ModelAndView mav = new ModelAndView("country");
+		final ModelAndView mav = new ModelAndView("redirectpays/pays");
 		mav.getModel().put("countryList", this.countryRepository.findAll());
-		
 		return mav;
 	}
+	
+	
 }
