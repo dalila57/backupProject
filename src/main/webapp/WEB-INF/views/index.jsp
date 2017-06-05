@@ -26,7 +26,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/creative.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,7 +56,7 @@
                         <a class="page-scroll" href="#about">Inscription</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Fonctionnalités</a>
+                        <a class="page-scroll" href="#services">Connexion</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +70,9 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Top Trip</h1>
                 <hr>
-                <p>Organisez votre voyage</p>
+                <h3>Organisez votre voyage en toute sérénité !</h3>
+                <p>Une liste pour votre valise et des informations liées à votre destination vous attendent...</p>
+           
                 <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">//  Barre de recherche  //</a> -->
  <form class="navbar-form navbar-center">		
   <form>
@@ -100,9 +102,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Avantages du site</h2>
+                    <h2 class="section-heading">Notre site</h2>
                     <hr class="light">
-                    <p class="text-faded">Blah blah</p>
+                    <p class="text-faded">Vous souhaitez préparer vos voyages dans les meilleures conditions ? Nous sommes là pour vous aider! 
+                    Préparez votre valise avec nous et partagez vos expériences avec vos amis !! </p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Inscrivez-vous!</a>
                 </div>
             </div>
@@ -129,10 +132,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Fonctionnalités 
+                                    Renseignements Pays 
                                 </div>
                                 <div class="project-name">
-                                    Infos Pays
+                                    Trouvez les informations utiles sur le pays de vos rêves pour faciliter la planification de vos voyages !
                                 </div>
                             </div>
                         </div>
@@ -144,10 +147,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Fonctionnalités
+                                    Journal de bord
                                 </div>
                                 <div class="project-name">
-                                    Journal
+                                    Stockez vos photos et avis sur les pays visités et créez votre propre liste de pays à explorer à l'avenir !
                                 </div>
                             </div>
                         </div>
@@ -159,10 +162,10 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Fonctionnalités
+                                    Valise
                                 </div>
                                 <div class="project-name">
-                                    Valise
+                                    Préparez votre propre checklist pour vos valises ! 
                                 </div>
                             </div>
                         </div>
@@ -192,7 +195,7 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
 
 </body>
 
