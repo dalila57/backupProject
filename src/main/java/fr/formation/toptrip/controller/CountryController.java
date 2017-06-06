@@ -18,16 +18,16 @@ import fr.formation.toptrip.dao.CountryRepository;
 import fr.formation.toptrip.entity.Country;
 
 @Controller
-@RequestMapping("pays/country")
+@RequestMapping("/pays")
 public class CountryController {
 	
 	@Autowired
 	private CountryRepository countryRepository;
 	
 	@RequestMapping("/index")
-	public ModelAndView index() {
+	public ModelAndView index(@RequestParam final Integer countryID) {
 		final ModelAndView mav = new ModelAndView("country");
-		mav.getModel().put("countryList", this.countryRepository.findAll());
+		mav.getModel().put("countryDetails", this.countryRepository.findOne(countryID));
 		return mav;
 	}
 	

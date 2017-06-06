@@ -5,27 +5,6 @@
 <html>
 <jsp:include page="header.jsp" />
 <body>
-	<h1>Liste des pays</h1>
-	<table id="countryTable">
-		<thead>
-			<tr>
-				<th>ID pays</th>
-				<th>Nom pays</th>
-				<th>Numero d'urgence</th>
-			</tr>
-		</thead>
-		<tbody>
-			<c:forEach items="${countryList}" var="country">
-				<tr>
-					<td>${country.countryID}</td>
-					<td>${country.countryName}</td>
-					<td>${country.emergencyNumber}</td>
-				</tr>
-			</c:forEach>
-			<script type="text/javascript">
-				$("#countryTable").DataTable();
-			</script>
-		</tbody>
-	</table>
+	<h1>Bienvenue en ${countryDetails.countryName}</h1>
 </body>
 </html>
