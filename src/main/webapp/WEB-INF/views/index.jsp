@@ -80,7 +80,7 @@
     <div class="form-group">
       <label for="sel1">Pays : </label>
       <select class="form-control" id="sel1" onChange="document.location = this.value" value="GO">
-      		<option></option>
+      		<option>Choisissez votre destination..</option>
 			<option value="redirectpays/"><a href="redirectpays/">France</a></option>
 			<option value="redirectpays/"><a href="redirectpays/">Espagne</a></option>
 			<option value="redirectpays/"><a href="redirectpays/">Italie</option>
