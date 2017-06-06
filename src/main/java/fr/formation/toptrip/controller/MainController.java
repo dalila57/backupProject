@@ -29,6 +29,9 @@ public class MainController {
 	@Autowired
 	private MessageSource messageSource;
 	
+	@Autowired
+	private CountryRepository countryRepository;
+	
 	public MessageSource getMessageSource() {
 		return messageSource;
 	}
