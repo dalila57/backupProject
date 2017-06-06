@@ -70,8 +70,9 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Top Trip</h1>
                 <hr>
-                <h3>Organisez votre voyage en toute sérénité !</h3>
-                <p>Une liste pour votre valise et des informations liées à votre destination vous attendent...</p>
+                <h3>S'informer. Se préparer. Voyager</h3>
+                <p>Des vacances à organiser ? </p>
+                <p>Choisissez Top Trip comme allié !</p>
            
                 <!-- <a href="#about" class="btn btn-primary btn-xl page-scroll">//  Barre de recherche  //</a> -->
  <form class="navbar-form navbar-center">		

@@ -178,7 +178,7 @@ header .header-content .header-content-inner p {
   font-weight: 300;
   color: #222;
   font-size: 16px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   header {
