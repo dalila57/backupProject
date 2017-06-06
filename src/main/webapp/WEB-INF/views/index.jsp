@@ -79,10 +79,10 @@
     <div class="form-group">
     <div class="form-group">
       <select class="form-control" id="sel1" onChange="document.location = this.value" value="GO">
-      		<option>Choisissez votre destination..</option>
-			<option value="redirectpays/"><a href="redirectpays/">France</a></option>
-			<option value="redirectpays/"><a href="redirectpays/">Espagne</a></option>
-			<option value="redirectpays/"><a href="redirectpays/">Italie</option>
+      	<option>Choisissez votre destination..</option>
+      	<c:forEach items="${countryList}" var="country">	
+			<option value="pays/pays/"><a href="pays/country">${country.countryName}</a></option>
+		</c:forEach>
       </select>
       <br>
     </div>
