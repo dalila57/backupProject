@@ -46,7 +46,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="../index.html">Top Trip</a>
+                <a class="navbar-brand page-scroll" href="../">Top Trip</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -190,6 +190,7 @@
  					<%-- <c:forEach items="${documents}" var="documents">
  					 	<label><input type="checkbox" value="">"${documents.documentsName}"</label>
  					 </c:forEach> --%>
+				</div>
 			</div>
 		</div>
 		
@@ -226,6 +227,21 @@
 </div>
 <hr class="primary">
 	<jsp:include page="footer.jsp" />
+	
+	 <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="../vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="../vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="../js/creative.js"></script>
+        
 
 </body>
 
