@@ -9,6 +9,9 @@ public class Country implements Serializable{
 	private Integer countryID;
 	private String countryName;
 	private Integer emergencyNumber;
+	private String money;
+	private String timeZone;
+	private Suitcase suitcase;
 	/**
 	 * @return the countryID
 	 */
@@ -45,6 +48,45 @@ public class Country implements Serializable{
 	public void setEmergencyNumber(Integer emergencyNumber) {
 		this.emergencyNumber = emergencyNumber;
 	}
+	/**
+	 * @return the money
+	 */
+	public String getMoney() {
+		return money;
+	}
+	/**
+	 * @param money the money to set
+	 */
+	public void setMoney(String money) {
+		this.money = money;
+	}
+	/**
+	 * @return the timeZone
+	 */
+	public String getTimeZone() {
+		return timeZone;
+	}
+	/**
+	 * @param timeZone the timeZone to set
+	 */
+	public void setTimeZone(String timeZone) {
+		this.timeZone = timeZone;
+	}
+	/**
+	 * @return the suitcase
+	 */
+	public Suitcase getSuitcase() {
+		return suitcase;
+	}
+	/**
+	 * @param suitcase the suitcase to set
+	 */
+	public void setSuitcase(Suitcase suitcase) {
+		this.suitcase = suitcase;
+	}
+	
+	
+	
 	
 	
 	

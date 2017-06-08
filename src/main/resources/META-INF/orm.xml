@@ -21,6 +21,142 @@ différentes colonnes de la base de données. -->
 			<basic name="emergencyNumber">
 				<column name="emergencyNumber" />
 			</basic>
+			<basic name="money">
+				<column name="money" />
+			</basic>
+			<basic name="timeZone">
+				<column name="timeZone" />
+			</basic>
+			<one-to-one name="suitcase">
+				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+			</one-to-one>
 		</attributes>
 	</entity>
-</entity-mappings>	
+	
+	<entity class="fr.formation.toptrip.entity.Suitcase">
+		<table name="suitcase" />
+		<attributes>
+			<id name="suitcaseID">
+				<column name="suitcaseID" />
+				<!--  AUTO_INCREMENT  -->
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<one-to-many name ="medecines">
+				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+			</one-to-many>
+			<one-to-many name ="documents">
+				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+			</one-to-many>
+			<one-to-many name ="multimedias">
+				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+			</one-to-many>
+			<one-to-many name ="hygieneObjects">
+				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+			</one-to-many>
+		</attributes>
+	</entity>
+	
+	<entity class="fr.formation.toptrip.entity.HygieneObjects">
+        <table name="hygieneobjects" />
+        <attributes>
+            <id name="hygieneObjectID">
+                <column name="hygieneObjectID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="hygieneObjectName">
+                <column name="hygieneObjectName" />
+            </basic>
+        </attributes>
+    </entity>
+    
+    <entity class="fr.formation.toptrip.entity.Documents">
+        <table name="documents" />
+        <attributes>
+            <id name="documentID">
+                <column name="documentID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="documentName">
+                <column name="documentName" />
+            </basic>
+        </attributes>
+    </entity>
+    
+    <entity class="fr.formation.toptrip.entity.Medecine">
+        <table name="medecine" />
+        <attributes>
+            <id name="medecineID">
+                <column name="medecineID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="medecineName">
+                <column name="medecineName" />
+            </basic>
+        </attributes>
+    </entity>
+    
+    <entity class="fr.formation.toptrip.entity.Multimedia">
+        <table name="multimedia" />
+        <attributes>
+            <id name="multimediaID">
+                <column name="multimediaID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="multimediaName">
+                <column name="multimediaName" />
+            </basic>
+        </attributes>
+    </entity>
+    
+    <entity class="fr.formation.toptrip.entity.VocabularyCategory">
+        <table name="vocabularycategory" />
+        <attributes>
+            <id name="vocabularyCategoryID">
+                <column name="vocabularyCategoryID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="vocabularyCategoryName">
+                <column name="vocabularyCategoryName" />
+            </basic>
+        </attributes>
+    </entity>
+    
+    <entity class="fr.formation.toptrip.entity.Vocabulary">
+        <table name="vocabulary" />
+        <attributes>
+            <id name="vocabularyID">
+                <column name="vocabularyID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="word">
+                <column name="word" />
+            </basic>
+            <basic name="phrase">
+                <column name="phrase" />
+            </basic>
+            <many-to-one name="country">
+                <join-column name="countryID" referenced-column-name="countryID"/>
+            </many-to-one>
+            <one-to-one name="vocabularyCategory">
+                <join-column name="vocabularyCategoryID" referenced-column-name="vocabularyCategoryID"/>
+            </one-to-one>
+        </attributes>
+    </entity>
+    
+     <entity class="fr.formation.toptrip.entity.City">
+        <table name="city" />
+        <attributes>
+            <id name="cityID">
+                <column name="cityID" />
+                <generated-value strategy="IDENTITY" />
+            </id>
+            <basic name="cityName">
+                <column name="cityName" />
+            </basic>
+            <many-to-one name="country">
+                <join-column name="countryID" referenced-column-name="countryID"/>
+            </many-to-one>
+        </attributes>
+    </entity>
+      
+</entity-mappings>

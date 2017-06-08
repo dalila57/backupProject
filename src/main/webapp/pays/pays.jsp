@@ -15,9 +15,6 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	
-    <!-- Custom Icons -->	
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Custom Fonts -->
     <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,6 +46,8 @@
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="index.html">Top Trip</a>
+               			<!-- <a class="navbar-brand page-scroll" href="index.html">Top Trip</a> si dossier différent (pays pas dans la racine)-->
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

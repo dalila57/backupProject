@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import fr.formation.toptrip.dao.CountryRepository;
 import fr.formation.toptrip.entity.Country;
+import fr.formation.toptrip.entity.Documents;
 
 @Controller
 @RequestMapping("/pays")
@@ -27,7 +28,13 @@ public class CountryController {
 	@RequestMapping("/index")
 	public ModelAndView index(@RequestParam final Integer countryID) {
 		final ModelAndView mav = new ModelAndView("country");
-		mav.getModel().put("countryDetails", this.countryRepository.findOne(countryID));
+		
+		Country country = this.countryRepository.findOne(countryID);
+		mav.getModel().put("countryDetails", country);
+		mav.getModel().put("documents", country.getSuitcase().getDocuments());
+		
+		//List<Documents> documents =  country.getSuitcase().getDocuments();
+		//mav.addObject("documents", documents);
 		return mav;
 	}
 	
