@@ -31,7 +31,7 @@ public class CountryController {
 		
 		Country country = this.countryRepository.findOne(countryID);
 		mav.getModel().put("countryDetails", country);
-		mav.getModel().put("documents", country.getSuitcase().getDocuments());
+		//mav.getModel().put("documents", country.getSuitcase().getDocuments());
 		
 		//List<Documents> documents =  country.getSuitcase().getDocuments();
 		//mav.addObject("documents", documents);
