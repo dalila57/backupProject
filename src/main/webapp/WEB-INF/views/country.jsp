@@ -77,15 +77,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="../img/portfolio/fullsize/fr/c1.jpg" alt="carrouselPays1" style="width:100%;">
+        <img src="../img/portfolio/fullsize/${countryDetails.countryID}/c1.jpg" alt="carrouselPays1" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="../img/portfolio/fullsize/fr/c2.jpg" alt="carrouselPays2" style="width:100%;">
+        <img src="../img/portfolio/fullsize/${countryDetails.countryID}/c2.jpg" alt="carrouselPays2" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="../img/portfolio/fullsize/fr/c3.jpg" alt="carrouselPays3" style="width:100%;">
+        <img src="../img/portfolio/fullsize/${countryDetails.countryID}/c3.jpg" alt="carrouselPays3" style="width:100%;">
       </div>
     </div>
 
@@ -126,8 +126,8 @@
         <div class="container-fluid">
 			<div class="row no-gutter popup-gallery">
                 <div class="col-lg-3 col-sm-3">
-                	 <a href="../img/portfolio/fullsize/fr/1.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/fr/1.jpg" class="img-responsive" alt="">
+                	 <a href="../img/portfolio/fullsize/${countryDetails.countryID}/1.jpg" class="portfolio-box">
+                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/1.jpg" class="img-responsive" alt="">
                      	 <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -138,8 +138,8 @@
                      </a>       
                 </div>
 				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/fr/2.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/fr/2.jpg" class="img-responsive" alt="">
+				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/2.jpg" class="portfolio-box">
+                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/2.jpg" class="img-responsive" alt="">
                      	 <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -150,8 +150,8 @@
                      </a>      
                 </div>
 				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/fr/3.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/fr/3.jpg" class="img-responsive" alt="">
+				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/3.jpg" class="portfolio-box">
+                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/3.jpg" class="img-responsive" alt="">
                      	 <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
@@ -162,8 +162,8 @@
                      </a>     
                 </div>
 				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/fr/4.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/fr/4.jpg" class="img-responsive" alt="">
+				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/4.jpg" class="portfolio-box">
+                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/4.jpg" class="img-responsive" alt="">
                      	 <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
