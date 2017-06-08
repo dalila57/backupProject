@@ -27,9 +27,12 @@ différentes colonnes de la base de données. -->
 			<basic name="timeZone">
 				<column name="timeZone" />
 			</basic>
-			<one-to-one name="suitcase">
-				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
-			</one-to-one>
+			<one-to-many name="cityList" fetch="EAGER">
+                <join-column name="countryID" referenced-column-name="countryID"/>
+            </one-to-many>
+            <one-to-one name="suitcase">
+                <join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
+            </one-to-one>
 		</attributes>
 	</entity>
 	
@@ -41,16 +44,16 @@ différentes colonnes de la base de données. -->
 				<!--  AUTO_INCREMENT  -->
 				<generated-value strategy="IDENTITY" />
 			</id>
-			<one-to-many name ="medecines">
+			<one-to-many name="medecines" fetch="EAGER">
 				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
 			</one-to-many>
-			<one-to-many name ="documents">
+			<one-to-many name="documents" fetch="EAGER" >
 				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
 			</one-to-many>
-			<one-to-many name ="multimedias">
+			<one-to-many name="multimedias" fetch="EAGER">
 				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
 			</one-to-many>
-			<one-to-many name ="hygieneObjects">
+			<one-to-many name="hygieneObjects" fetch="EAGER">
 				<join-column name="suitcaseID" referenced-column-name="suitcaseID"/>
 			</one-to-many>
 		</attributes>
@@ -153,9 +156,6 @@ différentes colonnes de la base de données. -->
             <basic name="cityName">
                 <column name="cityName" />
             </basic>
-            <many-to-one name="country">
-                <join-column name="countryID" referenced-column-name="countryID"/>
-            </many-to-one>
         </attributes>
     </entity>
       

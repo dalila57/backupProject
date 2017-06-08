@@ -8,7 +8,7 @@ public class HygieneObjects implements Serializable {
 	
 	private Integer hygieneObjectID;
 	private String hygieneObjectName;
-	private Suitcase suitcase;
+
 	/**
 	 * @return the hygieneObjectID
 	 */
@@ -32,18 +32,6 @@ public class HygieneObjects implements Serializable {
 	 */
 	public void setHygieneObjectName(String hygieneObjectName) {
 		this.hygieneObjectName = hygieneObjectName;
-	}
-	/**
-	 * @return the suitcase
-	 */
-	public Suitcase getSuitcase() {
-		return suitcase;
-	}
-	/**
-	 * @param suitcase the suitcase to set
-	 */
-	public void setSuitcase(Suitcase suitcase) {
-		this.suitcase = suitcase;
 	}
 	
 }

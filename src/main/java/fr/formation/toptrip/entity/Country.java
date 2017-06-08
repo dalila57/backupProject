@@ -1,6 +1,7 @@
 package fr.formation.toptrip.entity;
 
 import java.io.Serializable;
+import java.util.Set;
 
 public class Country implements Serializable{
 	
@@ -12,6 +13,7 @@ public class Country implements Serializable{
 	private String money;
 	private String timeZone;
 	private Suitcase suitcase;
+	private Set<City> cityList;
 	/**
 	 * @return the countryID
 	 */
@@ -73,21 +75,23 @@ public class Country implements Serializable{
 		this.timeZone = timeZone;
 	}
 	/**
-	 * @return the suitcase
+	 * @return the cityList
 	 */
+	public Set<City> getCityList() {
+		return cityList;
+	}
+	/**
+	 * @param cityList the cityList to set
+	 */
+	public void setCityList(Set<City> cityList) {
+		this.cityList = cityList;
+	}
 	public Suitcase getSuitcase() {
 		return suitcase;
 	}
-	/**
-	 * @param suitcase the suitcase to set
-	 */
 	public void setSuitcase(Suitcase suitcase) {
 		this.suitcase = suitcase;
 	}
-	
-	
-	
-	
 	
 	
 }

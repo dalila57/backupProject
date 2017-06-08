@@ -2,6 +2,7 @@ package fr.formation.toptrip.entity;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 public class Suitcase implements Serializable {
 
@@ -9,10 +10,10 @@ public class Suitcase implements Serializable {
 	
 	private Integer suitcaseID;
 
-	private List<Medecine> medecines;
-	private List<Documents> documents;
-	private List<Multimedia> multimedias;
-	private List<HygieneObjects> hygieneObjects;
+	private Set<Medecine> medecines;
+	private Set<Documents> documents;
+	private Set<Multimedia> multimedias;
+	private Set<HygieneObjects> hygieneObjects;
 	/**
 	 * @return the suitcaseID
 	 */
@@ -28,49 +29,51 @@ public class Suitcase implements Serializable {
 	/**
 	 * @return the medecines
 	 */
-	public List<Medecine> getMedecines() {
+	public Set<Medecine> getMedecines() {
 		return medecines;
 	}
 	/**
 	 * @param medecines the medecines to set
 	 */
-	public void setMedecines(List<Medecine> medecines) {
+	public void setMedecines(Set<Medecine> medecines) {
 		this.medecines = medecines;
 	}
 	/**
 	 * @return the documents
 	 */
-	public List<Documents> getDocuments() {
+	public Set<Documents> getDocuments() {
 		return documents;
 	}
 	/**
 	 * @param documents the documents to set
 	 */
-	public void setDocuments(List<Documents> documents) {
+	public void setDocuments(Set<Documents> documents) {
 		this.documents = documents;
 	}
 	/**
 	 * @return the multimedias
 	 */
-	public List<Multimedia> getMultimedias() {
+	public Set<Multimedia> getMultimedias() {
 		return multimedias;
 	}
 	/**
 	 * @param multimedias the multimedias to set
 	 */
-	public void setMultimedias(List<Multimedia> multimedias) {
+	public void setMultimedias(Set<Multimedia> multimedias) {
 		this.multimedias = multimedias;
 	}
 	/**
 	 * @return the hygieneObjects
 	 */
-	public List<HygieneObjects> getHygieneObjects() {
+	public Set<HygieneObjects> getHygieneObjects() {
 		return hygieneObjects;
 	}
 	/**
 	 * @param hygieneObjects the hygieneObjects to set
 	 */
-	public void setHygieneObjects(List<HygieneObjects> hygieneObjects) {
+	public void setHygieneObjects(Set<HygieneObjects> hygieneObjects) {
 		this.hygieneObjects = hygieneObjects;
-	}	
+	}
+	
+
 }

@@ -8,7 +8,6 @@ public class City implements Serializable {
 	
 	private Integer cityID;
 	private String cityName;
-	private Country country;
 	/**
 	 * @return the cityID
 	 */
@@ -33,16 +32,6 @@ public class City implements Serializable {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	/**
-	 * @return the country
-	 */
-	public Country getCountry() {
-		return country;
-	}
-	/**
-	 * @param country the country to set
-	 */
-	public void setCountry(Country country) {
-		this.country = country;
-	}	
+	
+	
 }

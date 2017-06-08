@@ -8,7 +8,7 @@ public class Medecine implements Serializable {
 	
 	private Integer medecineID;
 	private String medecineName;
-	private Suitcase suitcase;
+	
 	/**
 	 * @return the medecineID
 	 */
@@ -33,16 +33,5 @@ public class Medecine implements Serializable {
 	public void setMedecineName(String medecineName) {
 		this.medecineName = medecineName;
 	}
-	/**
-	 * @return the suitcase
-	 */
-	public Suitcase getSuitcase() {
-		return suitcase;
-	}
-	/**
-	 * @param suitcase the suitcase to set
-	 */
-	public void setSuitcase(Suitcase suitcase) {
-		this.suitcase = suitcase;
-	}
+	
 }

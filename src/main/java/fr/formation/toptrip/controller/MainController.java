@@ -40,5 +40,9 @@ public class MainController {
 		mav.getModel().put("countryList", this.countryRepository.findAll());
 		return mav;
 		}
+	
+	private String getMessage(final String key){
+		return this.messageSource.getMessage(key, null, Locale.getDefault());
+	}
 		
 }

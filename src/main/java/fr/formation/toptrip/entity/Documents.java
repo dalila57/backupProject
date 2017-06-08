@@ -8,7 +8,6 @@ public class Documents implements Serializable {
 	
 	private Integer documentID;
 	private String documentName;
-	private Suitcase suitcase;
 	/**
 	 * @return the documentID
 	 */
@@ -33,16 +32,6 @@ public class Documents implements Serializable {
 	public void setDocumentName(String documentName) {
 		this.documentName = documentName;
 	}
-	/**
-	 * @return the suitcase
-	 */
-	public Suitcase getSuitcase() {
-		return suitcase;
-	}
-	/**
-	 * @param suitcase the suitcase to set
-	 */
-	public void setSuitcase(Suitcase suitcase) {
-		this.suitcase = suitcase;
-	}
+	
+	
 }

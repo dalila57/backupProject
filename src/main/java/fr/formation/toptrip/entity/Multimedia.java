@@ -8,7 +8,7 @@ public class Multimedia implements Serializable {
 	
 	private Integer multimediaID;
 	private String multimediaName;
-	private Suitcase suitcase;
+	
 	/**
 	 * @return the multimediaID
 	 */
@@ -33,16 +33,5 @@ public class Multimedia implements Serializable {
 	public void setMultimediaName(String multimediaName) {
 		this.multimediaName = multimediaName;
 	}
-	/**
-	 * @return the suitcase
-	 */
-	public Suitcase getSuitcase() {
-		return suitcase;
-	}
-	/**
-	 * @param suitcase the suitcase to set
-	 */
-	public void setSuitcase(Suitcase suitcase) {
-		this.suitcase = suitcase;
-	}
+	
 }

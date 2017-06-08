@@ -106,8 +106,8 @@
    <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Infos Pays : ${countryDetails.countryName}</h2>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2 class="section-heading">Infos ${countryDetails.countryName} :</h2>
                     <hr class="light">
 					  <div class="row">
 						<div class="col-md-4"><h4>Numéro d'urgence <i class="fa fa-phone" aria-hidden="true"></i> : ${countryDetails.emergencyNumber}</h4></div>
@@ -124,56 +124,24 @@
 
    <section class="no-padding" id="portfolio">
         <div class="container-fluid">
-			<div class="row no-gutter popup-gallery">
-                <div class="col-lg-3 col-sm-3">
-                	 <a href="../img/portfolio/fullsize/${countryDetails.countryID}/1.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/1.jpg" class="img-responsive" alt="">
-                     	 <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                	LALALA
+            <div class="row no-gutter popup-gallery">
+                <c:forEach items="${cities}" var="city">
+                    <div class="col-lg-3 col-sm-3">
+                        <a
+                            href="../img/portfolio/fullsize/${countryDetails.countryID}/${city.cityID}.jpg"
+                            class="portfolio-box"> <img
+                            src="../img/portfolio/fullsize/${countryDetails.countryID}/${city.cityID}.jpg"
+                            class="img-responsive" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded">
+                                        ${city.cityName}</div>
                                 </div>
-                           </div>
-                         </div>
-                     </a>       
-                </div>
-				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/2.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/2.jpg" class="img-responsive" alt="">
-                     	 <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                	MAMAMA
-                                </div>
-                           </div>
-                         </div> 
-                     </a>      
-                </div>
-				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/3.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/3.jpg" class="img-responsive" alt="">
-                     	 <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                	TATATA
-                                </div>
-                           </div>
-                         </div>  
-                     </a>     
-                </div>
-				 <div class="col-lg-3 col-sm-3">
-				 	<a href="../img/portfolio/fullsize/${countryDetails.countryID}/4.jpg" class="portfolio-box">
-                     	<img src="../img/portfolio/fullsize/${countryDetails.countryID}/4.jpg" class="img-responsive" alt="">
-                     	 <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                	TOTOTOT
-                                </div>
-                           </div>
-                         </div> 
-                     </a>      
-                </div>
-
+                            </div>
+                            
+                        </a>
+                    </div>
+                </c:forEach>
             </div>
         </div>
     </section>
@@ -187,9 +155,9 @@
  			<h4>Documents</h4>
  			<div class="thumbnail">
  				<div class="checkbox">
- 					<%-- <c:forEach items="${documents}" var="documents">
- 					 	<label><input type="checkbox" value="">"${documents.documentsName}"</label>
- 					 </c:forEach> --%>
+ 					<c:forEach items="${documents}" var="doc">
+ 					 	<label><input type="checkbox" value="">${doc.documentName}</label></br>
+ 					 </c:forEach> 
 				</div>
 			</div>
 		</div>
@@ -198,7 +166,9 @@
  			<h4>Médecine</h4>
  			<div class="thumbnail">
  				<div class="checkbox">
- 					<label><input type="checkbox" value="">Trousse de secours</label>
+ 					<c:forEach items="${medecines}" var="med">
+ 					 	<label><input type="checkbox" value="">${med.medecineName}</label></br>
+ 					 </c:forEach> 
  				</div>
 
 			</div>
@@ -207,7 +177,9 @@
  			<h4>Hygiène</h4>
  			<div class="thumbnail">
  				<div class="checkbox">
- 					 <label><input type="checkbox" value="">Trousse de toilette</label>
+ 					 <c:forEach items="${hygieneobjects}" var="hyg">
+ 					 	<label><input type="checkbox" value="">${hyg.hygieneObjectName}</label></br>
+ 					 </c:forEach> 
  				</div>
  			</div>
 		</div>
@@ -216,10 +188,9 @@
  			<h4>Multimédia</h4>
  			<div class="thumbnail">
  				<div class="checkbox">
- 					 <label><input type="checkbox" value="">Portable</label>
- 				</div>
- 				<div class="checkbox">
- 					 <label><input type="checkbox" value="">Chargeurs</label>
+ 					<c:forEach items="${multimedias}" var="mul">
+ 					 	<label><input type="checkbox" value="">${mul.multimediaName}</label></br>
+ 					 </c:forEach> 
  				</div>
 			</div>	
 		</div>

@@ -70,7 +70,7 @@
             <div class="header-content-inner">
                 <h1 id="homeHeading">Top Trip</h1>
                 <hr>
-                <h3>S'informer. Se préparer. Voyager</h3>
+                <h3>S'informer. Se préparer. Voyager.</h3>
                 <p id = "p1">Des vacances à organiser ? </p>
                 <p id = "p2">Choisissez Top Trip comme allié !</p>
            
@@ -152,7 +152,7 @@
                                     Journal de bord
                                 </div>
                                 <div class="project-name">
-                                    Stockez vos photos et avis sur les pays visités et créez votre propre liste de pays à explorer à l'avenir !
+                                    Stockez vos photos et avis sur les pays visités et créez votre propre liste de pays à explorer !
                                 </div>
                             </div>
                         </div>
